@@ -1,0 +1,43 @@
+{
+  "counts": {
+    "blank_nodes": 0,
+    "classes": 1,
+    "identifier_subjects": 1256,
+    "labeled_typed_subjects": 887,
+    "linked_identifier_subjects": 376,
+    "measurements": 0,
+    "measurements_with_units": 0,
+    "predicates": 14,
+    "provenance_subjects": 887,
+    "subjects": 1256,
+    "triples": 6939,
+    "typed_subjects": 887
+  },
+  "findings": [
+    {
+      "code": "unlinked_identifier_ratio",
+      "severity": "warning",
+      "threshold": 0.25,
+      "value": 0.700637
+    }
+  ],
+  "inputs": [
+    "/tmp/tsca.sample.nt"
+  ],
+  "metrics": {
+    "blank_node_ratio": 0.0,
+    "measurement_without_unit_ratio": 0.0,
+    "novel_class_ratio": 0.0,
+    "novel_predicate_ratio": 0.0,
+    "unlabeled_typed_ratio": 0.0,
+    "unlinked_identifier_ratio": 0.700637,
+    "untyped_subject_ratio": 0.29379
+  },
+  "passed": true,
+  "schema_version": 1,
+  "score": 76.6,
+  "vocabulary": {
+    "novel_classes": [],
+    "novel_predicates": []
+  }
+}

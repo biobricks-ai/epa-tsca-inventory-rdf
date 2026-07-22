@@ -1,0 +1,7 @@
+.bb/dependencies/
+.dvc/cache/
+.venv/
+brick/*.nt
+brick/coverage.json
+.pytest_cache/
+__pycache__/

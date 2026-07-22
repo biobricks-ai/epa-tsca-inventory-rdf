@@ -1,0 +1,1 @@
+{"status":"built-artifact-push-blocked","source_rows":86862,"represented_rows":86862,"nonempty_fields":433082,"preserved_fields":433082,"triples":678677,"row_coverage":1.0,"field_coverage":1.0,"tests":"4 passed","ontology_health_score":76.6,"ontology_health_passed":true,"dvc_push":"blocked: AWS SSO refresh token expired; run aws login then dvc push"}

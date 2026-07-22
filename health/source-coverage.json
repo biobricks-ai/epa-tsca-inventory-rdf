@@ -1,0 +1,1 @@
+{"schema_version":"1.0","metrics_file":"brick/coverage.json","expected_tables":{"tsca_inventory":70754,"tsca_pmn_accession":16108},"minimum_row_coverage":1.0,"minimum_field_coverage":1.0,"row_rule":"Every source row is a regulatory entry","field_rule":"Every non-null source field is preserved"}

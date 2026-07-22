@@ -1,0 +1,22 @@
+schema: '2.0'
+stages:
+  build:
+    cmd: uv run python stages/01_convert.py
+    deps:
+    - path: .bb/dependencies.txt
+      hash: md5
+      md5: e9a14a0439ac2364746a57c3d6dbbc0e
+      size: 19
+    - path: stages/01_convert.py
+      hash: md5
+      md5: 0fb45dab2c2a0b0ffc4d140654cf7cfe
+      size: 4849
+    outs:
+    - path: brick/coverage.json
+      hash: md5
+      md5: 6e338cf61e2f63d578ee17abe8265a2e
+      size: 682
+    - path: brick/epa-tsca-inventory-rdf.nt
+      hash: md5
+      md5: 691b2747311529774d535bfba1cee82e
+      size: 104152768

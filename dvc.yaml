@@ -1,0 +1,8 @@
+stages:
+  build:
+    cmd: uv run python stages/01_convert.py
+    deps: [.bb/dependencies.txt, stages/01_convert.py]
+    outs: [brick/epa-tsca-inventory-rdf.nt]
+    metrics:
+      - brick/coverage.json:
+          cache: false
