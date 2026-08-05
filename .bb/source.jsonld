@@ -1,0 +1,56 @@
+{
+  "@context": "../../context/source.context.jsonld",
+  "@type": "dcat:Dataset",
+  "@id": "https://biobricks.ai/bricks/epa-tsca-inventory-rdf",
+  "dcterms:title": "EPA TSCA Inventory (July 2025) \u2014 RDF transformation",
+  "dcterms:description": "An RDF (N-Triples) transformation of the July 2025 U.S. EPA TSCA (Toxic Substances Control Act) Chemical Substance Inventory. CAS-identified substances and confidential PMN accession records are kept as distinct regulatory entries; parseable structures are linked to canonical InChIKey compound hubs (computed with RDKit) while unresolvable structures keep their EPA/CAS identity. Derived from the upstream 'epa-tsca-inventory' BioBrick, whose source is the EPA TSCA Inventory; some structures carry PubChem/CompTox provenance.",
+  "dcterms:license": "https://www.usa.gov/government-works",
+  "dcterms:creator": "U.S. EPA (TSCA Inventory source data); BioBricks (RDF transform)",
+  "dcterms:publisher": "U.S. Environmental Protection Agency (source)",
+  "dcterms:identifier": "https://github.com/biobricks-ai/epa-tsca-inventory-rdf",
+  "biobricks:licenseName": "US Government Work (public domain, 17 U.S.C. \u00a7 105)",
+  "biobricks:licenseClass": "open",
+  "biobricks:merckCommercialUse": "permitted",
+  "biobricks:licenseEvidence": [
+    {
+      "source": ".bb/dependencies.txt",
+      "quote": "epa-tsca-inventory",
+      "confidence": "high"
+    },
+    {
+      "source": "stages/01_convert.py",
+      "quote": "SOURCE=URIRef(\"https://www.epa.gov/tsca-inventory\")",
+      "confidence": "high"
+    },
+    {
+      "source": "README.md",
+      "quote": "The EPA source is a U.S. government work. PubChem/CompTox-derived structures are retained with their provenance.",
+      "confidence": "high"
+    },
+    {
+      "source": "https://edg.epa.gov/epa_data_license.html",
+      "quote": "all data produced by the U.S EPA is by default in the public domain and is not subject to domestic copyright protection under 17 U.S.C. \u00a7 105",
+      "confidence": "high"
+    }
+  ],
+  "biobricks:reviewed": false,
+  "biobricks:reviewNotes": "Determined by the BioBricks licensing-provenance annotation agent (Claude). This brick is an RDF re-serialization of the upstream 'epa-tsca-inventory' brick (declared in .bb/dependencies.txt), whose source is the EPA TSCA Inventory (epa.gov/tsca-inventory). The README states the EPA source is a U.S. government work; EPA data is public domain under 17 U.S.C. \u00a7 105, so classed open / commercial use permitted. Canonical structures are computed locally with RDKit (BSD-licensed toolkit), and any PubChem/CompTox-derived structures are also public domain, so no separately restricting license is introduced. HUMAN REVIEW: note the inventory includes confidential PMN accession records as regulatory entries (identifiers only, no structures) \u2014 confirm no CBI content beyond what EPA already publishes is exposed.",
+  "prov:wasDerivedFrom": [
+    {
+      "@type": "dcat:Dataset",
+      "@id": "https://www.epa.gov/tsca-inventory",
+      "dcterms:title": "EPA TSCA Chemical Substance Inventory (July 2025), via the epa-tsca-inventory BioBrick",
+      "dcterms:license": "https://www.usa.gov/government-works",
+      "dcat:landingPage": "https://www.epa.gov/tsca-inventory",
+      "dcterms:publisher": "U.S. Environmental Protection Agency"
+    }
+  ],
+  "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "prov:wasAssociatedWith": "BioBricks licensing-provenance annotation agent (Claude, slice items[600:606])",
+    "prov:endedAtTime": {
+      "@type": "xsd:dateTime",
+      "@value": "2026-08-05T00:00:00Z"
+    }
+  }
+}
